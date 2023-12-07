@@ -21,7 +21,7 @@ setIsLoading(!isLoading)
 {
   isLoading ? <h3>Cargando productos...</h3>:
 
-  products.map(product => <Card key ={product.id} name ={product.name} description={product.description}/>
+  products.map(product => <Card key ={product.id} name ={product.name} description={product.description} stock={product.stock}/>
   )
 } 
 </div>
