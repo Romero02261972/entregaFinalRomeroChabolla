@@ -1,5 +1,5 @@
 import { Button } from "../Button/Button"
-import { Count } from "../Count/Count"
+import { Count } from "../ItemQuantitySelector/ItemQuantitySelector"
 
 export const ItemList = ({name, description,stock}) => {
   return (
