@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../productMock";
 import { ItemList } from "../ItemList/ItemList";
 
-export const Maps = () => {
+export const ItemDetailContainer = () => {
 
 const [items, setProducts] = useState([]);
 const [isLoading, setIsLoading]= useState(true);
