@@ -1,7 +1,7 @@
 import { Button } from "../Button/Button"
 import { Count } from "../Count/Count"
 
-export const Card = ({name, description,stock}) => {
+export const ItemList = ({name, description,stock}) => {
   return (
     <div className="border border-1 border-dark rounded-3 col-6 p-3 m-2">
 <h5>{name}</h5>

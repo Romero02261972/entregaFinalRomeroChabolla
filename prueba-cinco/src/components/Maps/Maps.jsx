@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../productMock";
-import { Card } from "../Card/Card";
+import { ItemList } from "../ItemList/ItemList";
 
 export const Maps = () => {
 
-const [products, setProducts] = useState([]);
+const [items, setProducts] = useState([]);
 const [isLoading, setIsLoading]= useState(true);
 useEffect(()=> {
     getProducts()
@@ -17,11 +17,10 @@ setIsLoading(!isLoading)
 }, [])
   return (
     <div>
-<h1>Mostrar productos con el map</h1>
 {
   isLoading ? <h3>Cargando productos...</h3>:
 
-  products.map(product => <Card key ={product.id} name ={product.name} description={product.description} stock={product.stock}/>
+  items.map(item => <ItemList key ={item.id} name ={item.name} description={item.description} stock={item.stock}/>
   )
 } 
 </div>

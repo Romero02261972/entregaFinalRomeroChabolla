@@ -1,25 +1,25 @@
 import { useState } from "react";
 import { Button } from "../Button/Button";
 
-export const Count = ({initial=0,max}) => {
-const [count,setCount]= useState(initial);
+export const Count = ({initial=1,max}) => {
+const [ItemCount,setCount]= useState(initial);
 const increment = ()=> {
-    if((count ===max)) {
-        return setCount(count)
+    if((ItemCount ===max)) {
+        return setCount(ItemCount)
     }
-    setCount(count +1);
+    setCount(ItemCount +1);
 }
 const decrement = ()=> {
-    if(count === 0){
+    if(ItemCount === 0){
         return setCount(0);
     }
-    setCount(count - 1)
+    setCount(ItemCount - 1)
 }
 
   return (
     <>
   <Button text="+" functionClick={increment}/>
-<strong>{count}</strong>
+<strong>{ItemCount}</strong>
 <Button text="-" functionClick={decrement}/>
     </>
   )
