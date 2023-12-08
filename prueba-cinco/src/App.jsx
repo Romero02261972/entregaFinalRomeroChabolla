@@ -1,11 +1,11 @@
-import { ItemListContainer, ItemDetailContainer, NavBar } from "./components";
+import { ItemListContainer, NavBar, Greetings } from "./components";
 
 export const App = () => {
   return (
     <>
     <NavBar/>
     <ItemListContainer/>
-<ItemDetailContainer/>
+<Greetings/>
 </>
   )
 }

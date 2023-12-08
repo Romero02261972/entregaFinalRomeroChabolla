@@ -1,28 +1,13 @@
-import { useEffect, useState } from "react";
-import { getProducts } from "../../productMock";
-import { ItemList } from "../ItemList/ItemList";
+import { useState } from "react"
+import { getItems} from "../../itemMock";
 
 export const ItemDetailContainer = () => {
 
-const [items, setProducts] = useState([]);
-const [isLoading, setIsLoading]= useState(true);
-useEffect(()=> {
-    getProducts()
-    .then(resp => {{
-    console.log(resp)
-    setProducts(resp)
-setIsLoading(!isLoading)
-  }})
-    .catch(error => console.log(error))
-}, [])
-  return (
-    <div>
-{
-  isLoading ? <h3>Cargando productos...</h3>:
 
-  items.map(item => <ItemList key ={item.id} name ={item.name} description={item.description} stock={item.stock}/>
-  )
-} 
-</div>
-  )
-}
+} // return (
+//<div className="container d-flex justify-content-center mt-5">
+
+
+//</div>
+  //)
+//}

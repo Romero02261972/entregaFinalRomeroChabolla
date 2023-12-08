@@ -1,5 +1,7 @@
 export * from './Button/Button';
 export * from './CarWidget/CarWidget';
+export * from './Greetings/Greetings';
+export * from './ItemDetail/ItemDetail';
 export * from './ItemDetailContainer/ItemDetailContainer';
 export * from './ItemList/ItemList';
 export * from './ItemListContainer/ItemListContainer';
